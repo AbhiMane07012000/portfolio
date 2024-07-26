@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
- import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const ParticlesUI = () => {
@@ -16,7 +16,7 @@ const ParticlesUI = () => {
       // starting from v2 you can add only the features you need reducing the bundle size
       await loadAll(engine);
       //await loadFull(engine);
-     await loadSlim(engine);
+      await loadSlim(engine);
       await loadBasic(engine);
     }).then(() => {
       setInit(true);
@@ -29,6 +29,7 @@ const ParticlesUI = () => {
 
   const options = useMemo(
     () => ({
+      autoplay: true,
       background: {
         color: {
           value: "transparent",
@@ -39,7 +40,7 @@ const ParticlesUI = () => {
         events: {
           onClick: {
             enable: true,
-            mode: "push",
+            mode: "repulse",
           },
           onHover: {
             enable: true,
@@ -57,14 +58,45 @@ const ParticlesUI = () => {
         },
       },
       particles: {
-        color: {
-          value: "#000",
+        "color": {
+          "value": "#ff0000",
+          "animation": {
+            "h": {
+              "count": 0,
+              "enable": true,
+              "speed": 50,
+              "decay": 0,
+              "delay": 0,
+              "sync": false,
+              "offset": 0
+            },
+            "s": {
+              "count": 0,
+              "enable": false,
+              "speed": 1,
+              "decay": 0,
+              "delay": 0,
+              "sync": true,
+              "offset": 0
+            },
+            "l": {
+              "count": 0,
+              "enable": false,
+              "speed": 1,
+              "decay": 0,
+              "delay": 0,
+              "sync": true,
+              "offset": 0
+            }
+          }
         },
         links: {
-          color: "#000",
+          "color": {
+            "value": "random"
+          },
           distance: 150,
           enable: true,
-          opacity: 0.7,
+          opacity: 1,
           width: 1,
         },
         move: {
@@ -74,7 +106,7 @@ const ParticlesUI = () => {
             default: "bounce",
           },
           random: false,
-          speed: 6,
+          speed: 4,
           straight: false,
         },
         number: {
@@ -84,17 +116,17 @@ const ParticlesUI = () => {
           value: 100,
         },
         opacity: {
-          value: 0.5,
+          value: 1,
         },
         shape: {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 4 },
+          value: { min: 1, max: 7 },
         },
       },
       detectRetina: true,
-    }),
+    } ),
     [],
   );
 
@@ -104,13 +136,13 @@ const ParticlesUI = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        
+
       />
     );
   }
 
   return <>
-  
+
   </>;
 };
 
