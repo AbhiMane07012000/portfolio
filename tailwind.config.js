@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode:true,
   theme: {
     extend: {
       boxShadow: {
@@ -11,6 +12,9 @@ module.exports = {
       },
       fontFamily:{
         'montserrat' : '"Montserrat", sans-serif'
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
     },
   },
