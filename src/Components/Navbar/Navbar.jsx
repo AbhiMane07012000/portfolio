@@ -9,12 +9,13 @@ function Navbar() {
   };
 
   return (
-    <nav className="relative lg:flex justify-center items-center">
-      <div className=" lg:w-[55vw]   flex justify-between items-center sticky lg:fixed lg:top-10  lg:shadow-3xl bg-white bg-opacity-[0.5] px-10  lg:rounded-full z-50  ">
+    <nav className="relative lg:flex justify-center items-center" >
+      <div className=" w-[100vw] lg:w-[55vw]   flex flex-row justify-between lg:justify-between items-center fixed  lg:fixed lg:top-10  lg:shadow-3xl bg-white  lg:bg-opacity-[0.5] px-10  lg:rounded-full z-50  ">
         <Link to="#home" className="">
           <img
             className="h-10 lg:h-10  my-2 z-[3]"
             src="./main-logo.png"
+            
             alt=""
           />
         </Link>
@@ -22,36 +23,49 @@ function Navbar() {
           <Link
             to="home"
             smooth={true}
+           
             offset={0}
-            duration={500}
-            className="text-black cursor-pointer font-semibold font-montserrat hover:text-gray-900  "
+            duration={1500}
+            spy={true}
+            activeClass="text-red-500"
+            
+            className=" cursor-pointer font-semibold font-montserrat hover:text-cyan-400  "
           >
             Home
           </Link>
           <Link
             to="about"
             smooth={true}
+           
             offset={0}
-            duration={1000}
-            className="text-black cursor-pointer font-semibold font-montserrat hover:text-gray-900  "
+            duration={1500}
+            spy={true}
+            activeClass="text-red-500"
+            className="text-black cursor-pointer font-semibold font-montserrat hover:text-cyan-400  "
           >
             About
           </Link>
           <Link
             to="skill"
             smooth={true}
+           
             offset={0}
-            duration={500}
-            className="text-black cursor-pointer font-semibold font-montserrat hover:text-gray-900  "
+            duration={1500}
+            spy={true}
+            activeClass="text-red-500"
+            className="text-black cursor-pointer font-semibold font-montserrat hover:text-cyan-400  "
           >
             Skill
           </Link>
           <Link
             to="contact"
             smooth={true}
+           
             offset={0}
-            duration={500}
-            className="text-black cursor-pointer font-semibold font-montserrat hover:text-gray-900  "
+            duration={1500}
+            spy={true}
+            activeClass="text-red-500"
+            className="text-black cursor-pointer font-semibold font-montserrat hover:text-cyan-400  "
           >
             Contact
           </Link>
@@ -60,7 +74,7 @@ function Navbar() {
           {isMenuOpen ? (
             <button
               onClick={toggleMenu}
-              className="text-black font-semibold font-montserrat hover:text-gray-900"
+              className="text-black font-semibold font-montserrat hover:text-gray-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +115,7 @@ function Navbar() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden space-y-3 bg-white bg-opacity-[0.5] py-3">
+        <div className="fixed top-12 md:hidden z-50 space-y-3 bg-white  py-3 w-[100vw]">
           <Link
             to="home"
             className="block text-black font-semibold font-montserrat hover:text-gray-900 pl-16 py-2 "
