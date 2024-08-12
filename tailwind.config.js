@@ -15,12 +15,17 @@ module.exports = {
         'code' : '"Source Code Pro", monospace;'
       },
       animation: {
-        'tilt' :'tilt-in-fwd-tl 4s cubic-bezier(.25,.46,.45,.94) 0s alternate both'
+        'tilt' :'tilt-in-fwd-tl 4s cubic-bezier(.25,.46,.45,.94) 0s alternate both',
+        'pulse' :'pulse 2s ease-in-out 1s infinite both'
       },
       keyframes:{
-        'tilt-in-fwd-tl':
-        { '0%' :{transform:'scale(0);transform-origin:100% 0;opacity:1'},
+        'tilt-in-fwd-tl':{ '0%' :{transform:'scale(0);transform-origin:100% 0;opacity:1'},
         '100%' :{transform:'scale(1);transform-origin:100% 0;opacity:1'}
+        },
+        'pulse':{
+          "0%":{transform:'scale(1) '},
+          "50%":{transform:'scale(1.1) '},
+          "100%":{transform:'scale(1) '}
         }
       }
     },
