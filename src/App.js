@@ -5,7 +5,7 @@ import About from './Pages/About/About';
 import Skills from './Pages/Skills/Skills';
 import Contact from './Pages/Contact/Contact';
 import ParticlesUI from "./Components/UI/Paticles/ParticlesUI";
-
+import Projects from './Pages/Projects/Projects';
 
 function App() {
   return (
@@ -15,9 +15,11 @@ function App() {
   <Home/>
   <About />
   <Skills />
+  <Projects />
   <Contact />
   </>
   );
 }
+
 
 export default App;

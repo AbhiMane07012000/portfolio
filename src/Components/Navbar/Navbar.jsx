@@ -59,6 +59,18 @@ function Navbar() {
             Skill
           </Link>
           <Link
+            to="project"
+            smooth={true}
+           
+            offset={0}
+            duration={1500}
+            spy={true}
+            activeClass="text-red-500"
+            className="text-black cursor-pointer font-semibold font-montserrat hover:text-cyan-400  "
+          >
+            Projects
+          </Link>
+          <Link
             to="contact"
             smooth={true}
            
@@ -137,6 +149,13 @@ function Navbar() {
             onClick={toggleMenu}
           >
             Skills
+          </Link>
+          <Link
+            to="project"
+            className="block text-black font-semibold font-montserrat hover:text-gray-900 pl-16 py-2 "
+            onClick={toggleMenu}
+          >
+            Projects
           </Link>
           <Link
             to="contact"
