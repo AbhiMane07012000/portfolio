@@ -6,6 +6,7 @@ import Skills from './Pages/Skills/Skills';
 import Contact from './Pages/Contact/Contact';
 import ParticlesUI from "./Components/UI/Paticles/ParticlesUI";
 import Projects from './Pages/Projects/Projects';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
   <Skills />
   <Projects />
   <Contact />
+  <Footer />
   </>
   );
 }
