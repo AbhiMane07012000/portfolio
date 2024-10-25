@@ -41,7 +41,7 @@ const About = () => {
       <div className="flex justify-center py-10 md:py-16 lg:py-28  md:w-full lg:w-1/2  h-full ">
         <img
           className="lg:m-10 self-center md:grayscale transition duration-500 ease-in-out transform rotate-3  hover:scale-95 hover:grayscale-0 w-2/5  shadow-lg shadow-black rounded-md "
-          src="./Photo.jpg"
+          src="./images/Photo.jpg"
           alt="My-image"
         />
       </div>

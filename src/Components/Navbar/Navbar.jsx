@@ -15,7 +15,7 @@ function Navbar() {
         <Link to="#home" className="">
           <img
             className="h-10 lg:h-10  my-2 z-[3]"
-            src="./main-logo.png"
+            src="./images/main-logo.png"
             
             alt=""
           />

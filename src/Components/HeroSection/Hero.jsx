@@ -24,7 +24,7 @@ const Hero = () => {
 
           <div className="lg:w-1/2 pl-10 py-10 lg:py-32 lg:h-full">
             <div className="flex flex-row pb-2">
-              <img className="h-10" src="./hello.gif" alt="" />
+              <img className="h-10" src="./images/hello.gif" alt="" />
               <h2 className="pl-2 font-code font-bold self-end text-md md:text-md lg:text-md ">
                 Hello,
               </h2>

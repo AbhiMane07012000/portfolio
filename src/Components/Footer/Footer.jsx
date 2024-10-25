@@ -1,5 +1,5 @@
 import React from "react";
-import {  FaEnvelope, FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import {  FaEnvelope, FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Footer = () => {
@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="flex justify-center items-center gap-10 pt-16">
             <FaLinkedin className="text-lg lg:text-3xl" />
             <FaFacebookSquare className="text-lg lg:text-3xl" />
-            <FaInstagramSquare className="text-lg lg:text-3xl" />
+            <FaInstagram className="text-lg lg:text-3xl" />
             <FaEnvelope className="text-lg lg:text-3xl" />
           </div>
           <h4 className="py-10">Made with ❤️ by Abhijeet Mane</h4>
