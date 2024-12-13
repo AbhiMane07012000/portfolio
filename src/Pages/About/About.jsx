@@ -17,25 +17,29 @@ const About = () => {
           full-stack Apps and side projects?💡It's kind of my thing! 🚀
         </p>
       
-        <button className="ml-10 md:ml-14 lg:ml-16 w-1/2 md:w-1/4 lg:w-1/4  mb-5 bg-black py-2  rounded-md flex flex-row justify-center">
+        <a
+          href="./Abhijeet_Mane_Resume.pdf" // Replace with the actual file path
+          download="Abhijeet_Mane_Resume.pdf" // Name of the file after download
+          className="ml-10 md:ml-14 lg:ml-16 w-1/2 md:w-1/4 lg:w-1/4 mb-5 bg-black py-2 rounded-md flex flex-row justify-center"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="size-6 text-white"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
             />
           </svg>
-          <p className="pl-3  self-center font-semibold font-montserrat text-white text-xs md:text-md">
+          <p className="pl-3 self-center font-semibold font-montserrat text-white text-xs md:text-md">
             Resume
           </p>
-        </button>
+        </a>
       </div>
 
       <div className="flex justify-center py-10 md:py-16 lg:py-28  md:w-full lg:w-1/2  h-full ">
