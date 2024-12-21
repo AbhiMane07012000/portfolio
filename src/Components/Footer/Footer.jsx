@@ -50,16 +50,16 @@ const Footer = () => {
         </Link>
         <div className="flex justify-center items-center gap-10 pt-16">
           <NavLink to="https://www.linkedin.com/in/abhijeet-mane-07012000/">
-            <FaLinkedin className="text-lg lg:text-3xl" />
+            <FaLinkedin className="text-2xl lg:text-3xl" />
           </NavLink>
 
 
           <NavLink to="https://www.instagram.com/70__abhi__07/profilecard/">
-            <FaInstagram className="text-lg lg:text-3xl" />
+            <FaInstagram className="text-2xl lg:text-3xl" />
           </NavLink>
           
           <NavLink to="mailto:abhijeet.nitin.mane@gmail.com">
-            <FaEnvelope className="text-lg lg:text-3xl" />
+            <FaEnvelope className="text-2xl lg:text-3xl" />
           </NavLink>
         </div>
         <h4 className="py-10">Made with ❤️ by Abhijeet Mane</h4>
