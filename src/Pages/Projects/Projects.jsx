@@ -21,7 +21,9 @@ const Projects = () => {
         <div className="lg:col-span-2 ">
           <img src="./images/chitchat.png" alt="chitchat_img" />
         </div>
-        <h3 className="text-xl font-bold underline lg:absolute lg:bottom-16 lg:right-20">View More</h3>
+        <a onClick={()=>{alert("Currently working on it")}}>
+          <h3 className="text-xl font-bold underline lg:absolute lg:bottom-16 lg:right-20">View More</h3>
+        </a>
       </div>
      
     </div>
