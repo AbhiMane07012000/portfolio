@@ -1,7 +1,7 @@
 import React from "react";
 import {
   FaEnvelope,
-  FaFacebookSquare,
+  // FaFacebookSquare,
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";

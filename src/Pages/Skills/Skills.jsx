@@ -4,10 +4,13 @@ const Skills = () => {
   return (
     <section
       id="skill"
-      className="lg:h-[100vh] px-4 pt-5 lg:pt-28 lg:px-40 justify-center items-center font-code"
+      className="lg:h-[100vh] px-4 pt-5 lg:pt-20 lg:px-40 justify-center items-center font-code"
     >
       <h1 className="text-center  font-bold text-2xl py-10 lg:py-5">Skills</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
+          Next JS
+        </div>
         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
           React
         </div>
@@ -16,6 +19,9 @@ const Skills = () => {
         </div>
         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
           Redux
+        </div>
+         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
+          React Query
         </div>
         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
           Express
@@ -45,6 +51,9 @@ const Skills = () => {
           Javascript
         </div>
         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
+          Typescript
+        </div>
+        <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
           HTML
         </div>
         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
@@ -64,6 +73,9 @@ const Skills = () => {
         </div>
         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
           Netlify
+        </div>
+         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
+          Vercel
         </div>
         <div className="bg-black rounded-md text-white py-3 text-center font-semibold">
           Strapi CMS

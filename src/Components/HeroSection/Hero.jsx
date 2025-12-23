@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from "react";
 import { Link } from "react-scroll";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub, /* FaLinkedinIn */ } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 
 import Spline from "@splinetool/react-spline";
@@ -77,12 +76,12 @@ const Hero = () => {
             </Link>
 
             <div className="pl-4 flex flex-row space-x-6">
-              <a href="">
+              <a href={`${process.env.REACT_APP_GITHUB}`} >
                 <FaGithub className="hover:animate-bounce  size-6 md:size-7" />
               </a>
-              <a href="">
+              {/* <a href={`${process.env.REACT_APP_LINKEDIN}`}>
                 <FaLinkedinIn className="hover:animate-bounce  size-6 md:size-7" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

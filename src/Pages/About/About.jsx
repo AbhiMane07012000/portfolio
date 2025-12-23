@@ -1,5 +1,3 @@
-import React, { useRef, useEffect } from "react";
-
 const About = () => {
   return (
     <section id="about" className="flex flex-col lg:flex-row lg:h-[100vh] py-5">
